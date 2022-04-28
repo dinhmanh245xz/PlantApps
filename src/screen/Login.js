@@ -1,19 +1,29 @@
 import React, { useState } from 'react'
 import { View, Text,TextInput,StyleSheet ,Dimensions,TouchableOpacity} from 'react-native'
+import {useNavigation} from '@react-navigation/native'
 
 
+export default function Login({}) {
 
-export default function Login({navigation}) {
+// use useNavigation
+  const useNavigationHook = useNavigation();
+
   const [name,setName] = useState("");
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
 
+  console.log(useNavigationHook);
   const Submit=() => {
-    navigation.navigate('profile', {
+    useNavigationHook.navigate('profile',{
       userName : name,
       userEmail :email,
       userPassword : password,
-    });
+    })
+    // navigation.navigate('profile', {
+    //   userName : name,
+    //   userEmail :email,
+    //   userPassword : password,
+    // });
   };
   return (
     <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
