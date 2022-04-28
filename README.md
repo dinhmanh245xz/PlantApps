@@ -1,6 +1,6 @@
 # PlantApps
 React-native
-App Plant React-native 
+App Plant React-native Ui
 ![Simulator Screen Shot - iPhone 13 - 2022-04-28 at 16 38 17](https://user-images.githubusercontent.com/61041412/165724518-6db379b4-98c7-4f40-80a4-16e469ddb240.png)
 Home Screen
 
