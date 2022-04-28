@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { View, Text,TextInput,StyleSheet ,Dimensions,TouchableOpacity} from 'react-native'
 
 
+
 export default function Login({navigation}) {
   const [name,setName] = useState("");
   const [email,setEmail] = useState("");
